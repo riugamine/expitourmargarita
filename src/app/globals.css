@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
+/* Remove the duplicate import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Expitour brand colors - updated palette */
+  --expitour-blue: #063D58;
+  --expitour-teal: #3E9986;
+  --expitour-amber: #EDA518;
+  --expitour-yellow: #FFDE59;
+  --expitour-white: #FFFFFF;
+  --expitour-dark: #323232;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +28,95 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
+
+/* Custom utility classes */
+@layer components {
+  .btn-primary {
+    @apply bg-[#3E9986] text-white hover:bg-[#EDA518] hover:text-[#323232] px-5 py-2 rounded-md font-medium transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#FFDE59] text-[#323232] hover:bg-[#063D58] hover:text-white px-5 py-2 rounded-md font-medium transition-all duration-300;
+  }
+}
+
+/* Custom color utilities to match tailwind config */
+@layer utilities {
+  .text-expitour-blue {
+    color: var(--expitour-blue);
+  }
+  .text-expitour-teal {
+    color: var(--expitour-teal);
+  }
+  .text-expitour-amber {
+    color: var(--expitour-amber);
+  }
+  .text-expitour-yellow {
+    color: var(--expitour-yellow);
+  }
+  .text-expitour-dark {
+    color: var(--expitour-dark);
+  }
+  .text-expitour-white {
+    color: var(--expitour-white);
+  }
+  
+  .bg-expitour-blue {
+    background-color: var(--expitour-blue);
+  }
+  .bg-expitour-teal {
+    background-color: var(--expitour-teal);
+  }
+  .bg-expitour-amber {
+    background-color: var(--expitour-amber);
+  }
+  .bg-expitour-yellow {
+    background-color: var(--expitour-yellow);
+  }
+  .bg-expitour-dark {
+    background-color: var(--expitour-dark);
+  }
+  .bg-expitour-white {
+    background-color: var(--expitour-white);
+  }
+  
+  .hover\:text-expitour-blue:hover {
+    color: var(--expitour-blue);
+  }
+  .hover\:text-expitour-teal:hover {
+    color: var(--expitour-teal);
+  }
+  .hover\:text-expitour-amber:hover {
+    color: var(--expitour-amber);
+  }
+  .hover\:text-expitour-yellow:hover {
+    color: var(--expitour-yellow);
+  }
+  .hover\:text-expitour-dark:hover {
+    color: var(--expitour-dark);
+  }
+  .hover\:text-expitour-white:hover {
+    color: var(--expitour-white);
+  }
+  
+  .hover\:bg-expitour-blue:hover {
+    background-color: var(--expitour-blue);
+  }
+  .hover\:bg-expitour-teal:hover {
+    background-color: var(--expitour-teal);
+  }
+  .hover\:bg-expitour-amber:hover {
+    background-color: var(--expitour-amber);
+  }
+  .hover\:bg-expitour-yellow:hover {
+    background-color: var(--expitour-yellow);
+  }
+  .hover\:bg-expitour-dark:hover {
+    background-color: var(--expitour-dark);
+  }
+  .hover\:bg-expitour-white:hover {
+    background-color: var(--expitour-white);
+  }
 }
