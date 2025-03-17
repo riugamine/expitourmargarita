@@ -1,5 +1,6 @@
 import './globals.css';
 import { Poppins, Lora } from 'next/font/google';
+// Remove ThemeProvider import
 
 const poppins = Poppins({
   subsets: ['latin'],

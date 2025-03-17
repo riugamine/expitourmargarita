@@ -9,20 +9,33 @@
   --background: #ffffff;
   --foreground: #171717;
   
-  /* Expitour brand colors - updated palette */
+  /* Expitour brand colors */
   --expitour-blue: #063D58;
   --expitour-teal: #3E9986;
   --expitour-amber: #EDA518;
   --expitour-yellow: #FFDE59;
-  --expitour-white: #FFFFFF;
   --expitour-dark: #323232;
+  --expitour-white: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #063D58;
+  --foreground: #ededed;
+  
+  /* Asegurarse de que los colores de marca también se ajusten en modo oscuro si es necesario */
+  --expitour-blue: #063D58;
+  --expitour-teal: #3E9986;
+  --expitour-amber: #EDA518;
+  --expitour-yellow: #FFDE59;
+  --expitour-dark: #323232;
+  --expitour-white: #FFFFFF;
+}
+
+/* Añadir transiciones suaves para todos los elementos */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 body {
