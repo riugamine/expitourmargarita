@@ -1,5 +1,6 @@
 import './globals.css';
 import { Poppins, Lora } from 'next/font/google';
+import '@/lib/fontawesome'; // Import FontAwesome configuration
 // Remove ThemeProvider import
 
 const poppins = Poppins({
