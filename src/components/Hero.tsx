@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlane, faHotel, faUmbrellaBeach, faCar } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -61,9 +62,11 @@ export default function Hero() {
                 Explorar Servicios
               </Link>
               <Link 
-                href="/contacto" 
+                href="https://wa.me/584122586183" 
+                target="_blank"
                 className="inline-block bg-white hover:bg-expitour-amber/10 text-expitour-dark border-2 border-expitour-teal font-poppins font-medium px-8 py-3 rounded-md transition-all duration-300 text-center transform hover:scale-105"
               >
+                <FontAwesomeIcon icon={faWhatsapp} className="mr-2 text-[#25D366]" />
                 Contáctanos
               </Link>
             </div>
