@@ -76,7 +76,7 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-expitour-teal/20 rounded-full blur-3xl"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform hover:scale-[1.02] duration-500">
               <Image 
-                src="/images/hero-bg-2.jpg" 
+                src="https://res.cloudinary.com/da95ksabl/image/upload/v1742439221/anna-sullivan-KLYsx0-Atk4-unsplash_aypvvh.jpg" 
                 alt="Isla de Margarita" 
                 width={600} 
                 height={400}
