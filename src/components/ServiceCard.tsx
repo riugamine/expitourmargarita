@@ -1,40 +1,39 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 interface ServiceCardProps {
   title: string;
   description: string;
-  icon: string;
+  icon: IconDefinition;
   link: string;
   hasDetailPage: boolean;
+  color: string;
 }
 
-export default function ServiceCard({ title, description, icon, link, hasDetailPage }: ServiceCardProps) {
+export default function ServiceCard({ title, description, icon, link, hasDetailPage, color }: ServiceCardProps) {
   return (
-    <div className="bg-white dark:bg-expitour-blue/80 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
-      <div className="p-6">
-        <div className="w-16 h-16 mb-4 bg-expitour-teal rounded-full flex items-center justify-center">
-          <Image
-            src={icon}
-            alt={title}
-            width={32}
-            height={32}
-            className="w-8 h-8"
-          />
+    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:scale-[1.02] transform">
+      <div className="p-8">
+        <div className={`w-16 h-16 bg-gradient-to-br ${color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+          <FontAwesomeIcon icon={icon} className="h-8 w-8 text-expitour-dark" />
         </div>
-        <h3 className="font-poppins text-xl font-semibold text-expitour-dark dark:text-white mb-2">{title}</h3>
-        <p className="font-lora text-gray-600 dark:text-gray-300 mb-4">{description}</p>
-        {hasDetailPage ? (
-          <Link href={link} className="inline-flex items-center font-poppins text-expitour-amber hover:text-expitour-yellow">
-            Ver más
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+        <h3 className="font-poppins text-2xl font-bold text-expitour-dark mb-4 group-hover:text-expitour-teal transition-colors duration-300">
+          {title}
+        </h3>
+        <p className="font-lora text-gray-600 mb-6 leading-relaxed">
+          {description}
+        </p>
+        {hasDetailPage && (
+          <Link 
+            href={link}
+            className="inline-flex items-center text-expitour-teal font-medium hover:text-expitour-amber transition-colors duration-300 group-hover:translate-x-2 transform transition-transform"
+          >
+            Descubrir más
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5-5 5M5 7l5 5-5 5" />
             </svg>
           </Link>
-        ) : (
-          <span className="inline-block font-poppins text-expitour-dark dark:text-expitour-teal">
-            Disponible
-          </span>
         )}
       </div>
     </div>

@@ -33,9 +33,15 @@
 
 /* Añadir transiciones suaves para todos los elementos */
 * {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, transform, opacity;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   transition-duration: 300ms;
+}
+
+/* Añadir clase específica para transiciones de transformación */
+.transform-ease-out {
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  transition-duration: 500ms;
 }
 
 body {
@@ -251,4 +257,91 @@ body {
   .wave1 { background-size: 75% 120px; }
   .wave2 { background-size: 75% 140px; }
   .wave3 { background-size: 75% 160px; }
+}
+
+/* Animation delay utilities */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Animaciones de olas */
+.animate-wave {
+  animation: wave 20s linear infinite;
+  opacity: 0.3;
+}
+
+.animate-wave-slow {
+  animation: wave 30s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Estilos de nubes */
+.cloud {
+  @apply absolute bg-white/10 rounded-full;
+  filter: blur(10px);
+}
+
+.cloud-1 {
+  width: 100px;
+  height: 40px;
+  left: 10%;
+  animation: float 20s linear infinite;
+}
+
+.cloud-2 {
+  width: 60px;
+  height: 25px;
+  left: 50%;
+  animation: float 15s linear infinite;
+  animation-delay: -5s;
+}
+
+.cloud-3 {
+  width: 80px;
+  height: 35px;
+  left: 80%;
+  animation: float 25s linear infinite;
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100vw); }
+}
+
+/* Animación de aviones */
+.plane-animation {
+  animation: fly 30s linear infinite;
+}
+
+.plane-animation-reverse {
+  animation: fly-reverse 40s linear infinite;
+}
+
+@keyframes fly {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(calc(100vw + 100%)); }
+}
+
+@keyframes fly-reverse {
+  0% { transform: translateX(calc(100vw + 100%)) scaleX(-1); }
+  100% { transform: translateX(-100%) scaleX(-1); }
 }
