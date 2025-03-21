@@ -18,7 +18,7 @@ export default function ServicesSection() {
       icon: faHotel,
       link: '/services/alojamiento',
       hasDetailPage: true,
-      color: 'from-expitour-teal/20 to-expitour-teal/30'
+      color: 'from-[#3E9986]/20 to-[#3E9986]/30'
     },
     {
       title: 'Experiencias',
@@ -26,7 +26,7 @@ export default function ServicesSection() {
       icon: faUmbrellaBeach,
       link: '/services/experiencias',
       hasDetailPage: true,
-      color: 'from-expitour-amber/20 to-expitour-amber/30'
+      color: 'from-[#EDA518]/20 to-[#EDA518]/30'
     },
     {
       title: 'Traslado',

@@ -5,7 +5,7 @@ export default function FeaturedDestinations() {
   const destinations = [
     {
       name: 'Isla de Cubagua',
-      video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742438537/IMG_2947_w8lxai.mp4',
+      video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742438537/IMG947_w8lxai.mp4',
       fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742358580/coconut-drink-palm-tree-beach_vrnzcy.jpg',
       description: 'Primera ciudad europea de América del Sur, hogar de la legendaria Nueva Cádiz y sus ruinas históricas.',
       link: '/destinations/cubagua'

@@ -6,24 +6,27 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      content: "Nuestra experiencia con Expitour fue increíble. Organizaron todo nuestro viaje a la perfección, desde el alojamiento hasta las excursiones. ¡Volveremos a contar con ellos sin duda!",
-      author: "María Rodríguez",
-      location: "Caracas, Venezuela",
-      avatar: "/images/testimonials/avatar-1.jpg"
+      content: "La experiencia en familia con Expitour en Margarita ha sido satisfactoria, la atención de Paul y sus colaboradores en cada traslado nos permitió enamorarnos de cada rincón que conocimos, excelente y comodo servicio. Pronto volveremos seguros de contar con ustedes!",
+      author: "Marcel González",
+      location: "Venezuela, Caracas",
+      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573990/Marcel_gjvaxz.jpg",
+      rating: 4.5,
     },
     {
       id: 2,
-      content: "Gracias a Expitour pudimos conocer rincones de Margarita que no aparecen en las guías turísticas. Su atención personalizada y conocimiento local hicieron que nuestras vacaciones fueran inolvidables.",
-      author: "Juan Pérez",
-      location: "Bogotá, Colombia",
-      avatar: "/images/testimonials/avatar-2.jpg"
+      content: "Estamos muy agradecidos con los servicios y atención directa, personalizada e inmediata  prestada por Expitour... Los apartamentos vacacionales son excelentes, cómodos y acogedores. La ubicación frente al mar nos permitió disfrutar de caminatas inigualables,  para ver el amanecer hermosisimo de la isla de Margarita, así como también poder caminar hacia los mejores centros comerciales a realizar las compras necesarias. Gracias 🫂",
+      author: "Marian",
+      location: "Venezuela, Valencia",
+      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573991/Marian_k9pyif.jpg",
+      rating: 4.8,
     },
     {
       id: 3,
-      content: "El servicio de traslado fue puntual y el conductor muy amable. Los tours que reservamos estaban muy bien organizados y los guías eran conocedores y apasionados por la isla.",
-      author: "Ana García",
-      location: "Madrid, España",
-      avatar: "/images/testimonials/avatar-3.jpg"
+      content: "Gracias a expitour nuestros viaje a la isla de margarita fue único , ya que conocimos cada rincón de ella , el carisma de su gente y esos paisajes que quedarán grabados en nuestra memoria. Sin pasar por alto su excelente servicio y su mejor disposición. 100% recomendado",
+      author: "Ysbheli",
+      location: "Venezuela, Caracas",
+      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573991/Ysbheli_bsdpbl.jpg",
+      rating: 4.7,
     }
   ];
 
@@ -76,10 +79,32 @@ export default function Testimonials() {
                       <p className="font-lora text-lg italic mb-4">"{testimonial.content}"</p>
                       <div className="flex">
                         {[1, 2, 3, 4, 5].map((star) => (
-                          <svg key={star} className="h-5 w-5 text-expitour-yellow" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
+                          <div key={star} className="relative">
+                            {/* Estrella completa */}
+                            <svg 
+                              className={`h-5 w-5 ${star <= testimonial.rating ? 'text-expitour-yellow' : 'text-gray-400'}`} 
+                              fill="currentColor" 
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            {/* Media estrella */}
+                            {star === Math.ceil(testimonial.rating) && testimonial.rating % 1 !== 0 && (
+                              <div className="absolute inset-0 overflow-hidden" style={{ width: `${(testimonial.rating % 1) * 100}%` }}>
+                                <svg 
+                                  className="h-5 w-5 text-expitour-yellow" 
+                                  fill="currentColor" 
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                              </div>
+                            )}
+                          </div>
                         ))}
+                        <span className="ml-2 text-sm text-gray-400">
+                          ({testimonial.rating})
+                        </span>
                       </div>
                     </div>
                   </div>
