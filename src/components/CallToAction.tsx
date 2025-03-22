@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function CallToAction() {
   return (
@@ -32,9 +34,11 @@ export default function CallToAction() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
-                href="/contacto" 
+                href="https://wa.me/584122586183" 
+                target="_blank"
                 className="inline-block bg-expitour-blue hover:bg-expitour-teal text-expitour-white font-poppins font-semibold px-10 py-5 rounded-xl transition-all duration-300 text-center transform hover:scale-105 hover:shadow-lg text-xl"
               >
+                <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
                 contáctanos ahora
               </Link>
               <Link 
