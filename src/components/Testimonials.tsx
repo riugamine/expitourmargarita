@@ -27,6 +27,14 @@ export default function Testimonials() {
       location: "Venezuela, Caracas",
       avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573991/Ysbheli_bsdpbl.jpg",
       rating: 4.7,
+    },
+    {
+      id: 4,
+      content: "Excelente servicio de alojamiento!Super confiable, el apartamento que nos alquilo estaba súper bien ubicado y cómodo.También nos hizo servicio de traslado y todo super bien y seguro! 100% recomendados",
+      author: "Rafael Fermín",
+      location: "Venezuela, Barcelona",
+      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742660329/Rafael_Fermin_w9jexm.jpg",
+      rating: 4.9,
     }
   ];
 

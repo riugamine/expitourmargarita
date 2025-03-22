@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TypeAnimation } from 'react-type-animation';
+import Wave from 'react-wavify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlane, faHotel, faUmbrellaBeach, faCar } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -20,18 +22,64 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-white to-gray-100">
-      {/* Background with parallax effect */}
+    <section className="relative min-h-[calc(100vh-0px)] flex items-center overflow-hidden bg-gradient-to-b from-white to-gray-100 pt-16 md:pt-0">
+      {/* Background with interactive wave effect */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/margarita-pattern.png')] opacity-5 bg-repeat"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100/50"></div>
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden">
+          <svg width="0" height="0">
+            <defs>
+              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#063D58" />
+                <stop offset="50%" stopColor="#3E9986" />
+                <stop offset="100%" stopColor="#063D58" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <Wave 
+            fill="url(#waveGradient)"
+            paused={false}
+            options={{
+              height: 30,
+              amplitude: 40,
+              speed: 0.15,
+              points: 5
+            }}
+            style={{ 
+              position: 'relative',
+              marginBottom: '-10px'
+            }}
+            className="opacity-60"
+          />
+        </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-20">
+        {/* Resto del contenido permanece igual */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
-            <h1 className="font-poppins text-4xl md:text-5xl lg:text-6xl font-bold text-expitour-dark mb-6">
-              Tu próxima aventura en <span className="text-expitour-amber">Margarita</span> comienza aquí
+            <h1 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold text-expitour-dark mb-6 leading-normal md:leading-relaxed">
+              {/* Texto animado con librería optimizada en loop */}
+              <TypeAnimation
+                sequence={[
+                  'Tu próxima aventura en Margarita comienza aquí.',
+                  2000, // Pausa de 2 segundos
+                  '', // Borra el texto
+                  500, // Pequeña pausa antes de volver a escribir
+                  'Tu próxima aventura en Margarita comienza aquí.',
+                ]}
+                wrapper="span"
+                speed={50} // Velocidad de escritura (ms por carácter)
+                cursor={true}
+                repeat={Infinity} // Repetir infinitamente
+                className="inline-block"
+                style={{ 
+                  display: 'inline-block',
+                  background: 'linear-gradient(90deg, #3E9986 0%, #EDA518 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}
+              />
             </h1>
             <p className="font-lora text-lg text-gray-600 mb-8">
               Descubre el paraíso caribeño con nuestros paquetes personalizados y servicios exclusivos para hacer de tu viaje una experiencia inolvidable.
@@ -75,28 +123,24 @@ export default function Hero() {
           <div className={`relative transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
             <div className="absolute -inset-4 bg-expitour-teal/20 rounded-full blur-3xl"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform hover:scale-[1.02] duration-500">
-              <Image 
-                src="https://res.cloudinary.com/da95ksabl/image/upload/v1742439221/anna-sullivan-KLYsx0-Atk4-unsplash_aypvvh.jpg" 
-                alt="Isla de Margarita" 
-                width={600} 
-                height={400}
-                className="w-full h-auto rounded-2xl"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              <div className="relative w-full h-[400px] md:h-[500px]">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster="https://res.cloudinary.com/da95ksabl/image/upload/v1742439221/anna-sullivan-KLYsx0-Atk4-unsplash_aypvvh.jpg"
+                  preload="auto"
+                >
+                  <source src="https://res.cloudinary.com/da95ksabl/video/upload/v1742438537/IMG_2947_w8lxai.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    {/* Background with wave effect */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100/50"></div>
-            <div className="wave-container">
-              <div className="wave wave1"></div>
-              <div className="wave wave2"></div>
-              <div className="wave wave3"></div>
-            </div>
-          </div>
     </section>
   );
 }
