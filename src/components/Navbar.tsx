@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,11 @@ export default function Navbar() {
               <Image 
                 src="/images/logo_light_noname.png" 
                 alt="Expitour Margarita Logo" 
-                width={60} 
-                height={60} 
-                className="h-10 w-auto" 
+                width={40}  // Ajustado para que coincida con el tamaño real mostrado
+                height={40} // Ajustado para mantener la proporción
+                className="h-10 w-10" // Cambiado de w-auto a w-10 para un tamaño fijo
                 priority
+                sizes="(max-width: 768px) 40px, 60px"
               />
               <span className="font-poppins text-black font-bold text-sm tracking-wider mt-1">EXPITOUR</span>
               <span className="font-poppins text-expitour-blue text-[8px] tracking-widest -mt-1">MARGARITA</span>
@@ -60,9 +62,15 @@ export default function Navbar() {
               Traslado
             </Link>
             
-            <Link href="/contacto" className="font-poppins bg-expitour-teal text-white hover:bg-expitour-amber hover:text-expitour-dark px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow ml-2">
+            <a 
+              href="https://wa.me/584122586183" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-poppins bg-expitour-teal text-white hover:bg-expitour-amber hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow ml-2 flex items-center"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} className="mr-2 h-4 w-4" />
               Contáctanos
-            </Link>
+            </a>
           </div>
           
           {/* Espacio vacío en móvil para mantener el logo centrado */}
@@ -93,9 +101,15 @@ export default function Navbar() {
             Traslado
           </Link>
           
-          <Link href="/contacto" className="block font-poppins bg-expitour-teal text-white hover:bg-expitour-amber hover:text-expitour-dark px-3 py-2 rounded-md text-base font-medium transition-all duration-200 mt-2">
+          <a 
+            href="https://wa.me/584122586183" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block font-poppins bg-expitour-teal text-white hover:bg-expitour-amber hover:text-white px-3 py-2 rounded-md text-base font-medium transition-all duration-200 mt-2 flex items-center justify-center"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-2 h-4 w-4" />
             Contáctanos
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

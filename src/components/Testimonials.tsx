@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Testimonials() {
@@ -40,6 +40,15 @@ export default function Testimonials() {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Add auto-sliding functionality
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
   const nextTestimonial = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
@@ -71,12 +80,14 @@ export default function Testimonials() {
                   <div key={testimonial.id} className="w-full flex-shrink-0 px-4">
                     <div className="bg-expitour-dark/50 p-8 rounded-lg border border-gray-700">
                       <div className="flex items-center mb-6">
-                        <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
-                          <Image
-                            src={testimonial.avatar}
-                            alt={testimonial.author}
-                            fill
-                            className="object-cover"
+                        <div className="flex-shrink-0">
+                          <Image 
+                            src={testimonial.avatar} 
+                            alt={`${testimonial.author} avatar`} 
+                            width={64} 
+                            height={64} 
+                            className="h-16 w-16 rounded-full object-cover border-2 border-expitour-amber"
+                            sizes="64px"
                           />
                         </div>
                         <div>

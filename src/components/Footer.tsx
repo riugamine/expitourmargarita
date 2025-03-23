@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTiktok, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTiktok, faFacebookF, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center text-center">
           <Link href="/" className="flex flex-col items-center uppercase mb-6">
             <span className="text-expitour-amber text-3xl font-bold tracking-wider">EXPITOUR</span>
-            <span className="text-expitour-teal text-sm tracking-widest -mt-1">margarita</span>
+            <span className="text-amber-300 text-sm tracking-widest -mt-1">margarita</span>
           </Link>
           
           <p className="font-lora text-gray-300 mb-6 max-w-2xl text-center">
@@ -21,15 +21,23 @@ export default function Footer() {
           <div className="flex items-center justify-center space-x-6 mb-8">
             <a href="https://www.facebook.com/expitourmargarita" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110 duration-300">
               <span className="sr-only">Facebook</span>
-              <FontAwesomeIcon icon={faFacebookF} className="h-8 w-8 text-expitour-blue hover:text-expitour-amber" />
+              <FontAwesomeIcon icon={faFacebookF} className="h-8 w-8 text-expitour-amber hover:text-amber-300" />
             </a>
             <a href="https://www.instagram.com/expitourmargarita" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110 duration-300">
               <span className="sr-only">Instagram</span>
-              <FontAwesomeIcon icon={faInstagram} className="h-8 w-8 text-expitour-teal hover:text-expitour-amber" />
+              <FontAwesomeIcon icon={faInstagram} className="h-8 w-8 text-expitour-amber hover:text-amber-300" />
             </a>
             <a href="https://www.tiktok.com/@expitourmargarita" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110 duration-300">
               <span className="sr-only">TikTok</span>
-              <FontAwesomeIcon icon={faTiktok} className="h-8 w-8 text-expitour-amber hover:text-expitour-teal" />
+              <FontAwesomeIcon icon={faTiktok} className="h-8 w-8 text-expitour-amber hover:text-amber-300" />
+            </a>
+            <a href="https://www.youtube.com/@expiturmargarita" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110 duration-300">
+              <span className="sr-only">YouTube</span>
+              <FontAwesomeIcon icon={faYoutube} className="h-8 w-8 text-expitour-amber hover:text-amber-300" />
+            </a>
+            <a href="https://wa.me/584122586183" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110 duration-300">
+              <span className="sr-only">WhatsApp</span>
+              <FontAwesomeIcon icon={faWhatsapp} className="h-8 w-8 text-expitour-amber hover:text-amber-300" />
             </a>
           </div>
         </div>
