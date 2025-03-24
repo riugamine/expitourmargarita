@@ -36,7 +36,7 @@ export default function Navbar() {
           <div className="flex-1 flex items-center justify-center md:justify-start">
             <Link href="/" className="flex flex-col items-center">
               <Image 
-                src="/images/logo_light_noname.png" 
+                src="https://res.cloudinary.com/da95ksabl/image/upload/v1742790203/logo_light_noname_r0p8dq.png" 
                 alt="Expitour Margarita Logo" 
                 width={40}
                 height={40}
