@@ -4,7 +4,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function CallToAction() {
   return (
-    <section className="py-12 md:py-20 relative overflow-hidden min-h-[600px] flex items-center">
+    <section className=" pt-28 py-12 md:pb-12 md:pt-28 relative overflow-hidden min-h-[600px] flex items-center">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -23,14 +23,14 @@ export default function CallToAction() {
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-12 shadow-2xl border border-white/30 hover:border-white/40 transition-all duration-500">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block text-expitour-yellow font-poppins text-lg md:text-xl mb-4 animate-pulse">
-              ¡tu próxima aventura te espera!
+              ¡Tu próxima aventura te espera!
             </span>
             <h2 className="font-poppins text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
               ¿listo para vivir la{' '}
               <span className="text-expitour-yellow">experiencia margarita</span>?
             </h2>
             <p className="font-lora text-xl md:text-2xl text-gray-100 mb-10 leading-relaxed">
-              contacta con nuestro equipo de expertos y comienza a planificar tus próximas vacaciones en el paraíso caribeño
+              Contacta con nuestro equipo de expertos y comienza a planificar tus próximas vacaciones en el paraíso caribeño
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 

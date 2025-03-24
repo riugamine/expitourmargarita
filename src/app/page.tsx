@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <CallToAction />
       <ServicesSection />
       <FeaturedDestinations />
       <Testimonials />
-      <CallToAction />
+      <Hero />
       <Footer />
     </main>
   );

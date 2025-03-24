@@ -42,6 +42,17 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 mt-4 pt-6 text-center text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} Expitour Margarita. Todos los derechos reservados.</p>
+          <p className="mt-2">
+            Powered by{' '}
+            <a 
+              href="https://www.instagram.com/joseangelweb_" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-expitour-amber hover:text-amber-300 transition-colors duration-300"
+            >
+              joseangelweb
+            </a>
+          </p>
         </div>
       </div>
     </footer>
