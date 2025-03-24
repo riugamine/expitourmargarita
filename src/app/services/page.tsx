@@ -4,13 +4,14 @@ import { faPlaneArrival, faHotel, faUmbrellaBeach, faCarSide } from '@fortawesom
 import Link from 'next/link';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 // Primero definimos las interfaces
 interface Service {
   title: string;
   description: string;
   longDescription: string;
-  icon: any; // FontAwesome icon type
+  icon: IconDefinition;
   link: string;
   image: string;
   features: string[];

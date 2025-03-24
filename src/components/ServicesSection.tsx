@@ -1,5 +1,4 @@
 import ServiceCard from './ServiceCard';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlaneArrival, faHotel, faUmbrellaBeach, faCarSide } from '@fortawesome/free-solid-svg-icons';
 
 export default function ServicesSection() {

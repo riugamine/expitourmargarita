@@ -3,16 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUmbrellaBeach, faShip, faPersonSwimming, faWater, faHotel } from '@fortawesome/free-solid-svg-icons';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
+import { Experience } from '@/types/index';
 
-interface Experience {
-  title: string;
-  description: string;
-  videoUrl?: string;
-  imageUrl: string;
-  icon: any;
-  whatsappMessage: string;
-  features: string[];
-}
 
 export default function ExperienciasPage() {
   const experiences: Experience[] = [

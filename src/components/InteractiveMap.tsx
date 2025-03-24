@@ -1,22 +1,15 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
+import { useMemo } from 'react';
 
-// Define el tipo para los destinos
-interface Destination {
-  id: number;
-  name: string;
-  position: { lat: number; lng: number };
-  description: string;
-  imageUrl: string;
-}
 
 export default function InteractiveMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
   
   // Destinos en Margarita y alrededores
-  const destinations: Destination[] = [
+  const destinations = useMemo(() =>[
     {
       id: 1,
       name: 'Playa El Agua',
@@ -45,7 +38,7 @@ export default function InteractiveMap() {
       description: 'Reserva natural con manglares, ideal para paseos en bote y observación de aves.',
       imageUrl: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357532/IMG_0507_b8o1j1.jpg'
     }
-  ];
+  ],[]);
 
   // Inicializar el mapa cuando el script se carga
   useEffect(() => {
@@ -118,7 +111,7 @@ export default function InteractiveMap() {
         infoWindow.open(map, marker);
       });
     });
-  }, [mapLoaded]);
+  }, [mapLoaded, destinations]);
 
   return (
     <section className="py-16 bg-white">

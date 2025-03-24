@@ -47,7 +47,7 @@ export default function Testimonials() {
     }, 4000); // Change slide every 4 seconds
 
     return () => clearInterval(timer);
-  }, []);
+  }, [testimonials.length]);
 
   const nextTestimonial = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -95,7 +95,7 @@ export default function Testimonials() {
                           <p className="font-lora text-sm text-gray-400">{testimonial.location}</p>
                         </div>
                       </div>
-                      <p className="font-lora text-lg italic mb-4">"{testimonial.content}"</p>
+                      <p className="font-lora text-lg italic mb-4">&quot;{testimonial.content}&rdquo;</p>
                       <div className="flex">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <div key={star} className="relative">

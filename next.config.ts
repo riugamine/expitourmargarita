@@ -14,7 +14,6 @@ const nextConfig: NextConfig = {
     formats: ['image/webp'],
   },
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['@fortawesome/fontawesome-svg-core'],
   },
 };

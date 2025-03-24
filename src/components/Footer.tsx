@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faFacebookF, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
   return (
