@@ -13,7 +13,7 @@ export default function FeaturedDestinations() {
     {
       name: 'Castillo Santa Rosa',
       video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742437774/IMG_5566_ns8air.mp4',
-      fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742358595/man-sitting-tropical-island_qqlhgm.jpg',
+      fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742358580/coconut-drink-palm-tree-beach_vrnzcy.jpg',
       description: 'Fortaleza colonial con impresionantes vistas de La Asunción, capital histórica de Nueva Esparta.',
       link: '/destinations/castillo-santa-rosa'
     },
@@ -39,7 +39,7 @@ export default function FeaturedDestinations() {
         <div className="text-center mb-12 sm:mb-16">
           <span className="inline-block text-expitour-teal font-medium text-base sm:text-lg mb-2">Explora Margarita</span>
           <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-expitour-dark mb-4 sm:mb-6 leading-tight">
-            Destinos <span className="text-expitour-teal">Destacados</span>
+            Destinos <span className="text-expitour-teal">destacados</span>
           </h2>
           <p className="font-lora text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Descubre los lugares más emblemáticos y hermosos de la Isla de Margarita que no puedes dejar de visitar.

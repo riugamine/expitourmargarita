@@ -5,36 +5,36 @@ import { faPlaneArrival, faHotel, faUmbrellaBeach, faCarSide } from '@fortawesom
 export default function ServicesSection() {
   const services = [
     {
-      title: 'Boletería',
-      description: 'Reserva tus boletos aéreos nacionales e internacionales con las mejores tarifas del mercado.',
+      title: 'Boletos Aéreos',
+      description: 'Reserve sus boletos aéreos nacionales e internacionales con las mejores tarifas del mercado.',
       icon: faPlaneArrival,
       link: '/services/boleteria',
       hasDetailPage: false,
-      color: 'from-blue-500/20 to-blue-600/20'
+      color: 'from-blue-500/40 to-blue-600/40'
     },
     {
-      title: 'Alojamiento',
-      description: 'Encuentra el hospedaje perfecto para tu estadía en la Isla de Margarita, desde hoteles de lujo hasta posadas acogedoras.',
+      title: 'Hospedaje',
+      description: 'Encuentre el alojamiento perfecto para su estadía en la Isla de Margarita, desde hoteles de lujo hasta posadas acogedoras.',
       icon: faHotel,
       link: '/services/alojamiento',
-      hasDetailPage: true,
-      color: 'from-[#3E9986]/20 to-[#3E9986]/30'
+      hasDetailPage: false,
+      color: 'from-[#3E9986]/40 to-[#3E9986]/50'
     },
     {
       title: 'Experiencias',
-      description: 'Vive aventuras inolvidables con nuestros tours y actividades exclusivas en los mejores lugares de la isla.',
+      description: 'Viva aventuras inolvidables con nuestros tours y actividades exclusivas en los mejores lugares de la isla.',
       icon: faUmbrellaBeach,
       link: '/services/experiencias',
       hasDetailPage: true,
-      color: 'from-[#EDA518]/20 to-[#EDA518]/30'
+      color: 'from-[#EDA518]/40 to-[#EDA518]/50'
     },
     {
-      title: 'Traslado',
-      description: 'Servicio de transporte seguro y confiable desde el aeropuerto hasta tu alojamiento o cualquier punto de la isla.',
+      title: 'Traslados',
+      description: 'Servicio de transporte seguro y confiable desde el aeropuerto hasta su alojamiento o cualquier punto de la isla.',
       icon: faCarSide,
       link: '/services/traslado',
       hasDetailPage: false,
-      color: 'from-green-500/20 to-green-600/20'
+      color: 'from-green-500/40 to-green-600/40'
     }
   ];
 

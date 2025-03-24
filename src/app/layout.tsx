@@ -1,6 +1,7 @@
 import './globals.css';
 import { Poppins, Lora } from 'next/font/google';
 import '@/lib/fontawesome'; // Import FontAwesome configuration
+import CookieConsent from '@/components/CookieConsent';
 // Remove ThemeProvider import
 
 const poppins = Poppins({
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="es" className={`${poppins.variable} ${lora.variable}`}>
       <body className="font-poppins">
         {children}
+        <CookieConsent />
       </body>
     </html>
   );
