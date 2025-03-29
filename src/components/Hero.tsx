@@ -132,7 +132,7 @@ export default function Hero() {
                   poster="https://res.cloudinary.com/da95ksabl/image/upload/v1742439221/anna-sullivan-KLYsx0-Atk4-unsplash_aypvvh.jpg"
                   preload="auto"
                 >
-                  <source src="https://res.cloudinary.com/da95ksabl/video/upload/v1742438537/IMG_2947_w8lxai.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265384/IMG_2947_w8lxai_wbktaz.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
               </div>

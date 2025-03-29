@@ -9,7 +9,7 @@ export default function Testimonials() {
       content: "La experiencia en familia con Expitour en Margarita ha sido satisfactoria, la atención de Paul y sus colaboradores en cada traslado nos permitió enamorarnos de cada rincón que conocimos, excelente y comodo servicio. Pronto volveremos seguros de contar con ustedes!",
       author: "Marcel González",
       location: "Venezuela, Caracas",
-      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573990/Marcel_gjvaxz.jpg",
+      avatar: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265213/Marcel_gjvaxz_ceoygq.jpg",
       rating: 4.5,
     },
     {
@@ -17,7 +17,7 @@ export default function Testimonials() {
       content: "Estamos muy agradecidos con los servicios y atención directa, personalizada e inmediata  prestada por Expitour... Los apartamentos vacacionales son excelentes, cómodos y acogedores. La ubicación frente al mar nos permitió disfrutar de caminatas inigualables,  para ver el amanecer hermosisimo de la isla de Margarita, así como también poder caminar hacia los mejores centros comerciales a realizar las compras necesarias. Gracias 🫂",
       author: "Marian",
       location: "Venezuela, Valencia",
-      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573991/Marian_k9pyif.jpg",
+      avatar: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265213/Marian_k9pyif_nmwtck.jpg",
       rating: 4.8,
     },
     {
@@ -25,7 +25,7 @@ export default function Testimonials() {
       content: "Gracias a expitour nuestros viaje a la isla de margarita fue único , ya que conocimos cada rincón de ella , el carisma de su gente y esos paisajes que quedarán grabados en nuestra memoria. Sin pasar por alto su excelente servicio y su mejor disposición. 100% recomendado",
       author: "Ysbheli",
       location: "Venezuela, Caracas",
-      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742573991/Ysbheli_bsdpbl.jpg",
+      avatar: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265213/Ysbheli_bsdpbl_jzgrnw.jpg",
       rating: 4.7,
     },
     {
@@ -33,7 +33,7 @@ export default function Testimonials() {
       content: "Excelente servicio de alojamiento!Super confiable, el apartamento que nos alquilo estaba súper bien ubicado y cómodo.También nos hizo servicio de traslado y todo super bien y seguro! 100% recomendados",
       author: "Rafael Fermín",
       location: "Venezuela, Barcelona",
-      avatar: "https://res.cloudinary.com/da95ksabl/image/upload/v1742660329/Rafael_Fermin_w9jexm.jpg",
+      avatar: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265214/Rafael_Fermin_w9jexm_awkqhj.jpg",
       rating: 4.9,
     }
   ];

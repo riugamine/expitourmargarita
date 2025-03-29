@@ -4,29 +4,29 @@ export default function FeaturedDestinations() {
   const destinations = [
     {
       name: 'Isla de Cubagua',
-      video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742438537/IMG_2947_w8lxai.mp4',
-      fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742358580/coconut-drink-palm-tree-beach_vrnzcy.jpg',
+      video: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265384/IMG_2947_w8lxai_wbktaz.mp4',
+      fallbackImage: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg',
       description: 'Primera ciudad europea de América del Sur, hogar de la legendaria Nueva Cádiz y sus ruinas históricas.',
       link: '/services/experiencias'
     },
     {
       name: 'Castillo Santa Rosa',
-      video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742437774/IMG_5566_ns8air.mp4',
-      fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742358580/coconut-drink-palm-tree-beach_vrnzcy.jpg',
+      video: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265249/IMG_5566_ns8air_o3vi0y.mp4',
+      fallbackImage: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265225/IMG_5547_dmra69_wgcshh.jpg',
       description: 'Fortaleza colonial con impresionantes vistas de La Asunción, capital histórica de Nueva Esparta.',
       link: '/services/experiencias'
     },
     {
       name: 'Castillo San Carlos de Borromeo',
-      video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742438869/este_rsybl4.mp4',
-      fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357278/IMG_1809_jmiohw.jpg',
+      video: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265260/este_rsybl4_hpuh74.mp4',
+      fallbackImage: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265217/IMG_1809_jmiohw_z0nlcm.jpg',
       description: 'Fortaleza histórica con vistas panorámicas de Pampatar y el mar Caribe.',
       link: '/services/experiencias'
     },
     {
       name: 'Parque Nacional Laguna de La Restinga',
-      video: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742439205/este_1_xmmzpi.mp4',
-      fallbackImage: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357532/IMG_0507_b8o1j1.jpg',
+      video: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265351/este_1_xmmzpi_ndsaeu.mp4',
+      fallbackImage: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265228/IMG_0558_fuwfmb_q7zvap.jpg',
       description: 'Reserva natural con manglares, ideal para paseos en bote y observación de aves.',
       link: '/services/experiencias'
     }

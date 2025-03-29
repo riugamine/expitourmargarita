@@ -30,7 +30,7 @@ export default function ServicesPage() {
       longDescription: 'Ofrecemos un servicio completo de reserva de boletos aéreos, con las mejores tarifas y rutas disponibles. Trabajamos con las principales aerolíneas para asegurar tu viaje perfecto.',
       icon: faPlaneArrival,
       link: '/services/boleteria',
-      image: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742697634/pexels-wanderer-731217_yujkkg.jpg',
+      image: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265214/pexels-wanderer-731217_yujkkg_oyhhee.jpg',
       features: [
         'Vuelos nacionales e internacionales',
         'Mejores tarifas garantizadas',
@@ -44,7 +44,7 @@ export default function ServicesPage() {
       longDescription: 'Desde hoteles de lujo hasta posadas acogedoras, te ayudamos a encontrar el alojamiento perfecto que se ajuste a tus necesidades y presupuesto en la Isla de Margarita.',
       icon: faHotel,
       link: '/services/alojamiento',
-      image: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742697634/pexels-siddanth-sawant-178759136-28464721_p2nru4.jpg',
+      image: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265215/pexels-siddanth-sawant-178759136-28464721_p2nru4_mrna7u.jpg',
       features: [
         'Hoteles de lujo',
         'Posadas familiares',
@@ -58,7 +58,7 @@ export default function ServicesPage() {
       longDescription: 'Descubre la magia de Margarita con nuestras experiencias únicas. Desde tours históricos hasta aventuras acuáticas, tenemos la actividad perfecta para cada viajero.',
       icon: faUmbrellaBeach,
       link: '/services/experiencias',
-      image: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357278/IMG_1809_jmiohw.jpg',
+      image: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265217/IMG_1809_jmiohw_z0nlcm.jpg',
       features: [
         'Tours guiados',
         'Actividades acuáticas',
@@ -72,7 +72,7 @@ export default function ServicesPage() {
       longDescription: 'Nuestro servicio de traslado te garantiza un viaje cómodo y seguro desde el aeropuerto hasta tu alojamiento o cualquier punto de la isla, con conductores profesionales y vehículos modernos.',
       icon: faCarSide,
       link: '/services/traslado',
-      image: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357532/IMG_0507_b8o1j1.jpg',
+      image: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265215/IMG_0279_ryqe9p_b7ygun.jpg',
       features: [
         'Traslados aeropuerto-hotel',
         'Transporte privado',

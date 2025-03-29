@@ -14,7 +14,7 @@ export default function CallToAction() {
           playsInline
           className="object-cover w-full h-full"
         >
-          <source src="https://res.cloudinary.com/da95ksabl/video/upload/v1742435099/854152-hd_1920_1080_24fps_lu6aea.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265240/854152-hd_1920_1080_24fps_lu6aea_nxgcdq.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-expitour-blue/80 via-expitour-blue/70 to-expitour-dark/90"></div>
       </div>

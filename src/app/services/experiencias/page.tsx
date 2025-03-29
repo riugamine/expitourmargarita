@@ -11,8 +11,8 @@ export default function ExperienciasPage() {
     {
       title: 'Isla de Cubagua',
       description: 'Descubra la primera ciudad europea de América del Sur, hogar de la legendaria Nueva Cádiz y sus ruinas históricas.',
-      videoUrl: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742438537/IMG_2947_w8lxai.mp4',
-      imageUrl: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742358580/coconut-drink-palm-tree-beach_vrnzcy.jpg',
+      videoUrl: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265384/IMG_2947_w8lxai_wbktaz.mp4',
+      imageUrl: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg',
       icon: faUmbrellaBeach,
       whatsappMessage: "¡Hola! Me interesa el tour a la Isla de Cubagua. ¿Podrían brindarme más información?",
       features: [
@@ -25,8 +25,8 @@ export default function ExperienciasPage() {
     {
       title: 'Kayak en La Restinga',
       description: 'Explore los místicos manglares del Parque Nacional La Restinga en una aventura en kayak.',
-      videoUrl: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742439205/este_1_xmmzpi.mp4',
-      imageUrl: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357532/IMG_0507_b8o1j1.jpg',
+      videoUrl: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265351/este_1_xmmzpi_ndsaeu.mp4',
+      imageUrl: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265228/IMG_0558_fuwfmb_q7zvap.jpg',
       icon: faWater,
       whatsappMessage: "¡Hola! Me gustaría obtener información sobre la aventura en kayak en La Restinga.",
       features: [
@@ -39,7 +39,7 @@ export default function ExperienciasPage() {
     {
       title: 'Paddle Board',
       description: 'Disfrute de una experiencia única practicando paddle board en las tranquilas aguas de Playa El Agua.',
-      imageUrl: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357278/IMG_1809_jmiohw.jpg',
+      imageUrl: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265227/IMG_6834_ubqlel_lauejs.jpg',
       icon: faPersonSwimming,
       whatsappMessage: "¡Hola! Me interesa la actividad de paddle board. ¿Podrían darme más detalles?",
       features: [
@@ -52,8 +52,8 @@ export default function ExperienciasPage() {
     {
       title: 'Tour en Catamarán',
       description: 'Navegue por las cristalinas aguas del Caribe en un lujoso catamarán visitando las mejores playas.',
-      videoUrl: 'https://res.cloudinary.com/da95ksabl/video/upload/v1742438869/este_rsybl4.mp4',
-      imageUrl: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742357278/IMG_1809_jmiohw.jpg',
+      videoUrl: 'https://res.cloudinary.com/dhzl31kb8/video/upload/v1743265260/este_rsybl4_hpuh74.mp4',
+      imageUrl: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265217/IMG_1809_jmiohw_z0nlcm.jpg',
       icon: faShip,
       whatsappMessage: "¡Hola! Me gustaría información sobre el tour en catamarán.",
       features: [
@@ -66,7 +66,7 @@ export default function ExperienciasPage() {
     {
       title: 'Resort Day Pass',
       description: 'Disfrute de un día completo en los mejores resorts de la isla con acceso a todas las instalaciones.',
-      imageUrl: 'https://res.cloudinary.com/da95ksabl/image/upload/v1742697634/pexels-siddanth-sawant-178759136-28464721_p2nru4.jpg',
+      imageUrl: 'https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265215/pexels-siddanth-sawant-178759136-28464721_p2nru4_mrna7u.jpg',
       icon: faHotel,
       whatsappMessage: "¡Hola! Me interesa el day pass para resort. ¿Qué opciones tienen disponibles?",
       features: [
