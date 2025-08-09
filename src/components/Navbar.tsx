@@ -12,6 +12,7 @@ export default function Navbar() {
   const navigationLinks = [
     { href: '/', text: 'Inicio' },
     { href: '/services', text: 'Servicios' },
+    { href: '/anfitrion', text: 'Anfitrión' },
   ];
 
   return (
