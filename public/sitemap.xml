@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
-    <loc>https://expitourmargarita.com</loc>
-    <lastmod>2024-01-22</lastmod>
+    <loc>https://expitourmargarita.com/</loc>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Services Page -->
   <url>
     <loc>https://expitourmargarita.com/services</loc>
-    <lastmod>2024-01-22</lastmod>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Experiences Page -->
+  <url>
+    <loc>https://expitourmargarita.com/services/experiencias</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Host/Anfitrion Page -->
+  <url>
+    <loc>https://expitourmargarita.com/anfitrion</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Accommodation Services -->
+  <url>
+    <loc>https://expitourmargarita.com/services/alojamiento</loc>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Air Tickets Services -->
   <url>
-    <loc>https://expitourmargarita.com/services/experiencias</loc>
-    <lastmod>2024-01-22</lastmod>
+    <loc>https://expitourmargarita.com/services/boleteria</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Transfer Services -->
+  <url>
+    <loc>https://expitourmargarita.com/services/traslado</loc>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

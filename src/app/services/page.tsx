@@ -1,10 +1,13 @@
-'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlaneArrival, faHotel, faUmbrellaBeach, faCarSide } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { servicesMetadata } from '../metadata';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = servicesMetadata;
 
 // Primero definimos las interfaces
 interface Service {
@@ -20,6 +23,7 @@ interface Service {
 interface CardContentProps {
   service: Service;
 }
+
 export default function ServicesPage() {
   
   // Actualizamos la definición del array services
@@ -143,7 +147,6 @@ export default function ServicesPage() {
     </main>
   );
 }
-
 
 // Actualizamos el componente CardContent
 const CardContent: React.FC<CardContentProps> = ({ service }) => (

@@ -1,7 +1,57 @@
+# Robots.txt for Expitour Margarita
+# https://expitourmargarita.com
+
+# Allow all crawlers
 User-agent: *
 Allow: /
+
+# Sitemap location
 Sitemap: https://expitourmargarita.com/sitemap.xml
 
 # Prevent access to admin or private areas
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Prevent access to development files
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.map$
+
+# Allow important directories
+Allow: /images/
+Allow: /public/
+
+# Crawl delay (optional - be respectful to server)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Additional SEO directives
+# Host: https://expitourmargarita.com
