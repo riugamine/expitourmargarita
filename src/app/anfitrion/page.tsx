@@ -14,7 +14,6 @@ import {
   faCheck,
   faTimes,
   faChevronRight,
-  faCamera,
   faUmbrellaBeach,
   faWater,
   faMountain,
