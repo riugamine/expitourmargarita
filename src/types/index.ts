@@ -32,6 +32,7 @@ export interface TourService {
   groupSize: string;
   includes: string[];
   excludes: string[];
+  recommendations: string[];
   itinerary: ItineraryItem[];
   whatsappMessage: string;
   category: 'senderismo' | 'acuatico' | 'cultural' | 'aventura' | 'relajacion' | 'panoramico';

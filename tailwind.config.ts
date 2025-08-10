@@ -23,6 +23,10 @@ const config: Config = {
           'white': '#FFFFFF',
         },
       },
+      perspective: {
+        '1000': '1000px',
+        '2000': '2000px',
+      },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',
         'fade-in-up': 'fadeInUp 0.5s ease-out forwards',

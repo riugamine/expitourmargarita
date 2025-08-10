@@ -5,7 +5,6 @@ export default function ServicesSection() {
   const services = [
     {
       title: 'Boletos Aéreos',
-      description: 'Reserve sus boletos aéreos nacionales e internacionales con las mejores tarifas del mercado.',
       icon: faPlaneArrival,
       link: '/services/boleteria',
       hasDetailPage: false,
@@ -13,7 +12,6 @@ export default function ServicesSection() {
     },
     {
       title: 'Hospedaje',
-      description: 'Encuentre el alojamiento perfecto para su estadía en la Isla de Margarita, desde hoteles de lujo hasta posadas acogedoras.',
       icon: faHotel,
       link: '/services/alojamiento',
       hasDetailPage: false,
@@ -21,7 +19,6 @@ export default function ServicesSection() {
     },
     {
       title: 'Experiencias',
-      description: 'Viva aventuras inolvidables con nuestros tours y actividades exclusivas en los mejores lugares de la isla.',
       icon: faUmbrellaBeach,
       link: '/services/experiencias',
       hasDetailPage: true,
@@ -29,7 +26,6 @@ export default function ServicesSection() {
     },
     {
       title: 'Traslados',
-      description: 'Servicio de transporte seguro y confiable desde el aeropuerto hasta su alojamiento o cualquier punto de la isla.',
       icon: faCarSide,
       link: '/services/traslado',
       hasDetailPage: false,
@@ -59,7 +55,6 @@ export default function ServicesSection() {
             >
               <ServiceCard
                 title={service.title}
-                description={service.description}
                 icon={service.icon}
                 link={service.link}
                 hasDetailPage={service.hasDetailPage}
