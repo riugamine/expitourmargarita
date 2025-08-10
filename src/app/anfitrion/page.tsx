@@ -131,9 +131,6 @@ export default function AnfitrionPage() {
                   className="rounded-full object-cover border-8 border-white shadow-2xl"
                   priority
                 />
-                <div className="absolute -bottom-4 -right-4 bg-expitour-amber text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  {hostProfile.experience}
-                </div>
               </div>
             </div>
 
@@ -142,9 +139,14 @@ export default function AnfitrionPage() {
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 font-lora">
                 {hostProfile.name}
               </h1>
-              <h2 className="text-xl lg:text-2xl mb-6 text-expitour-yellow font-medium">
-                {hostProfile.title}
-              </h2>
+              <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+                <h2 className="text-xl lg:text-2xl text-expitour-yellow font-medium">
+                  {hostProfile.title}
+                </h2>
+                <span className="bg-expitour-amber text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg">
+                  {hostProfile.experience}
+                </span>
+              </div>
               <p className="text-lg lg:text-xl mb-8 leading-relaxed max-w-3xl">
                 {hostProfile.description}
               </p>
