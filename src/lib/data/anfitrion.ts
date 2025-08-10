@@ -5,7 +5,7 @@ import { TourService, HostProfile } from '@/types';
  */
 export const hostProfile: HostProfile = {
   name: "Paul Cortesía",
-  title: "Guía Turístico Certificado",
+  title: "Asesor Turístico",
   description: "Con más de 7 años de experiencia en turismo en la Isla de Margarita, me especializo en crear experiencias únicas e inolvidables. Conozco cada rincón de nuestra hermosa isla y me apasiona compartir su belleza natural, historia y cultura con visitantes de todo el mundo.",
   image: "/images/paul.jpg",
   experience: "7+ años",
@@ -31,7 +31,7 @@ export const tourServices: TourService[] = [
     id: "tour-salina-pampatar-cuatrimoto",
     title: "Tour Salina de Pampatar Cuatrimoto",
     description: "Aventura emocionante en cuatrimoto explorando las históricas Salinas de Pampatar y sus alrededores.",
-    fullDescription: "Vive una experiencia llena de adrenalina explorando las famosas Salinas de Pampatar en cuatrimoto. Este tour de aventura te llevará por paisajes únicos, formaciones salinas naturales y terrenos diversos mientras aprendes sobre la historia y importancia de la producción de sal en la región.",
+    fullDescription: "Vive una experiencia llena de adrenalina explorando las famosas Salinas de Pampatar en cuatrimoto. Este tour de aventura te llevará por paisajes únicos, formaciones salinas naturales y terrenos diversos mientras aprendes sobre la historia y la importancia de la producción de sal en la región.",
     image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
     gallery: [
       "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
@@ -42,8 +42,6 @@ export const tourServices: TourService[] = [
     includes: [
       "Guía",
       "Hidratación",
-      "1 botellita de agua en el recorrido",
-      "degustación de Sal y otros productos en Stand de @SalMampatare"
     ],
     excludes: [
       "Snacks",
