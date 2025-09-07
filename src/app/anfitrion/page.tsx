@@ -33,6 +33,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import TiltedCard from '@/components/ui/TiltedCard';
+import ImageCarousel from '@/components/ui/ImageCarousel';
 import { hostProfile, tourServices } from '@/lib/data/anfitrion';
 import { TourService } from '@/types';
 
@@ -315,24 +316,23 @@ export default function AnfitrionPage() {
                 duration: 0.3 // Reducido de 0.4
               }}
             >
-              {/* Header del modal */}
+              {/* Header del modal con carrusel */}
               <div className="relative h-64 md:h-80">
-                <Image
-                  src={selectedService.image}
+                <ImageCarousel
+                  images={selectedService.gallery || [selectedService.image]}
                   alt={selectedService.title}
-                  fill
-                  className="object-cover"
+                  className="h-full"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 pointer-events-none" />
                 <motion.button
                   onClick={closeServiceModal}
-                  className="absolute top-4 right-4 bg-black/30 backdrop-blur-sm text-white p-3 rounded-full hover:bg-black/50 transition-all duration-300 border border-white/20"
-                  whileHover={{ scale: 1.05 }} // Reducido de 1.1
-                  whileTap={{ scale: 0.95 }} // Reducido de 0.9
+                  className="absolute top-4 right-4 bg-black/30 backdrop-blur-sm text-white p-3 rounded-full hover:bg-black/50 transition-all duration-300 border border-white/20 z-10"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
                 </motion.button>
-                <div className="absolute bottom-6 left-6 right-6 text-white">
+                <div className="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
                   <h2 className="text-2xl md:text-3xl font-bold mb-3 drop-shadow-lg text-shadow-lg">
                     {selectedService.title}
                   </h2>

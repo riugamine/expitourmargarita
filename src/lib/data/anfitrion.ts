@@ -32,9 +32,12 @@ export const tourServices: TourService[] = [
     title: "Tour Salina de Pampatar Cuatrimoto",
     description: "Aventura emocionante en cuatrimoto explorando las históricas Salinas de Pampatar y sus alrededores.",
     fullDescription: "Vive una experiencia llena de adrenalina explorando las famosas Salinas de Pampatar en cuatrimoto. Este tour de aventura te llevará por paisajes únicos, formaciones salinas naturales y terrenos diversos mientras aprendes sobre la historia y la importancia de la producción de sal en la región.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/TOUR SALINAS DE PAMPATAR CUATRIMOTO/IMG_3085.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/TOUR SALINAS DE PAMPATAR CUATRIMOTO/IMG_3085.webp",
+      "/aventuras/TOUR SALINAS DE PAMPATAR CUATRIMOTO/IMG_3086.webp",
+      "/aventuras/TOUR SALINAS DE PAMPATAR CUATRIMOTO/221659c8-0cf3-4a74-b711-a424423a1bea.webp",
+      "/aventuras/TOUR SALINAS DE PAMPATAR CUATRIMOTO/67eb9523-498f-4829-b548-057679de003f.webp"
     ],
     price: "80 USD",
     duration: "Variable",
@@ -86,9 +89,12 @@ export const tourServices: TourService[] = [
     title: "Tour Margariteño Atardecer",
     description: "Recorrido por los lugares más emblemáticos de Margarita durante las horas doradas del atardecer.",
     fullDescription: "Vive la magia de Margarita durante el atardecer con este tour especial que te llevará por los sitios más fotogénicos y románticos de la isla. Disfruta de vistas espectaculares, colores únicos del cielo caribeño y los mejores spots para capturar recuerdos inolvidables mientras el sol se pone en el horizonte.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2593 2.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2552.webp",
+      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2574 2.webp",
+      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2593 2.webp",
+      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_3639.webp"
     ],
     price: "80 USD",
     duration: "Salida: 1:00 / 1:30 pm aproximadamente. Llegada: 7:00 pm aproximadamente",
@@ -140,9 +146,11 @@ export const tourServices: TourService[] = [
     title: "Vuelo en Parapente Margarita",
     description: "Experiencia única e inolvidable volando en parapente sobre la hermosa Isla de Margarita.",
     fullDescription: "Vive la experiencia más emocionante de tu vida volando en parapente sobre los paisajes más hermosos de Margarita. Disfruta de vistas panorámicas únicas mientras te deslizas suavemente por el cielo caribeño, sintiendo la libertad y la adrenalina en una actividad segura y profesional.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/VUELO EN PARAPENTE EN MARGARITA/ParapenteMargarita.webp ",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/VUELO EN PARAPENTE EN MARGARITA/ParapenteMargarita.webp",
+      "/aventuras/VUELO EN PARAPENTE EN MARGARITA/IMG_3061.webp",
+      "/aventuras/VUELO EN PARAPENTE EN MARGARITA/IMG_3062.webp"
     ],
     price: "140 USD",
     duration: "30 minutos aproximadamente (15 minutos de vuelo)",
@@ -173,9 +181,14 @@ export const tourServices: TourService[] = [
     title: "Day Pass Agua Dorada",
     description: "Disfruta de un día completo en las instalaciones del exclusivo hotel Agua Dorada.",
     fullDescription: "Relájate y disfruta de un día perfecto en las instalaciones del exclusivo hotel Agua Dorada. Incluye acceso a piscinas, áreas de descanso, servicios de playa y la comodidad de instalaciones de primera clase con bebidas alcohólicas nacionales incluidas.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/DAY PASS AGUA DORADA/IMG_3087.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/DAY PASS AGUA DORADA/IMG_3087.webp",
+      "/aventuras/DAY PASS AGUA DORADA/IMG_3088.webp",
+      "/aventuras/DAY PASS AGUA DORADA/IMG_3089.webp",
+      "/aventuras/DAY PASS AGUA DORADA/IMG_3090.webp",
+      "/aventuras/DAY PASS AGUA DORADA/IMG_3091.webp",
+      "/aventuras/DAY PASS AGUA DORADA/IMG_3092.webp"
     ],
     price: "80 USD",
     duration: "Full day",
@@ -225,9 +238,11 @@ export const tourServices: TourService[] = [
     title: "Full day Coche - Infinito",
     description: "Experiencia completa en la Isla de Coche con todas las comodidades incluidas para un día perfecto.",
     fullDescription: "Disfruta de un día completo en la hermosa Isla de Coche, conocida por sus playas de arena blanca y aguas cristalinas. Este tour todo incluido te ofrece transporte marítimo, almuerzo buffet, bebidas, actividades acuáticas y tiempo libre en playas paradisíacas.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/FULL DAY COCHE INFINITO/coche.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/FULL DAY COCHE INFINITO/coche.webp",
+      "/aventuras/FULL DAY COCHE INFINITO/coche2.webp",
+      "/aventuras/FULL DAY COCHE INFINITO/coche3.webp"
     ],
     price: "123.75 USD",
     duration: "9:00 a. m. - 4:00 p. m",
@@ -277,9 +292,12 @@ export const tourServices: TourService[] = [
     title: "Aventura en Pampatar",
     description: "Exploración emocionante de los alrededores de Pampatar con actividades de ecoturismo.",
     fullDescription: "Vive una aventura emocionante explorando los alrededores de Pampatar. Este tour de ecoturismo te llevará por senderos naturales, miradores panorámicos y áreas de observación de flora y fauna silvestre, perfecto para conectar con la naturaleza de Margarita.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/AVENTURA EN PAMPATAR/foto2-lista.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/AVENTURA EN PAMPATAR/foto2-lista.webp",
+      "/aventuras/AVENTURA EN PAMPATAR/483.webp",
+      "/aventuras/AVENTURA EN PAMPATAR/58.webp",
+      "/aventuras/AVENTURA EN PAMPATAR/87.webp"
     ],
     price: "50 USD",
     duration: "3 horas",
@@ -312,9 +330,16 @@ export const tourServices: TourService[] = [
     title: "Costa Caribe Pool Day",
     description: "Disfruta de un día completo en las instalaciones del hotel Costa Caribe con la piscina más grande de Margarita.",
     fullDescription: "Relájate y disfruta de un día perfecto en las instalaciones del hotel Costa Caribe, que cuenta con la piscina más grande de la isla de Margarita con Jacuzzi de agua salada. Incluye actividades de entretenimiento, kids club y música en vivo.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/COSTA CARIBE POOL DAY/costa-caribe-beach-hotel.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/COSTA CARIBE POOL DAY/costa-caribe-beach-hotel.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4830.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4836.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4837.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4877.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4948.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4982.webp",
+      "/aventuras/COSTA CARIBE POOL DAY/IMG_4984.webp"
     ],
     price: "70 USD",
     duration: "Check-in: 10:00 a. m. Check-out: 06:00 p. m",
@@ -365,9 +390,17 @@ export const tourServices: TourService[] = [
     title: "Day Pass Sunsol Unik",
     description: "Disfruta de un día completo en las instalaciones del exclusivo hotel Sunsol Unik.",
     fullDescription: "Relájate y disfruta de un día perfecto en las instalaciones del exclusivo hotel Sunsol Unik. Incluye acceso a piscinas, áreas de descanso, sala de juegos con mesas de ping-pong, pool, futbolito y billar, parque infantil y animación.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/DAY PASS SUNSOL UNIK/IMG_3132.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3132.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3133.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3134.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3135.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3136.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3137.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3138.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3139.webp",
+      "/aventuras/DAY PASS SUNSOL UNIK/IMG_3140.webp"
     ],
     price: "136 USD",
     duration: "Entrada: 10:30 am. Salida: 5:30 pm",
@@ -410,9 +443,13 @@ export const tourServices: TourService[] = [
     title: "Full Day Cubagua Lodge",
     description: "Experiencia completa en la histórica Isla de Cubagua con todas las comodidades incluidas para un día perfecto.",
     fullDescription: "Disfruta de un día completo en la hermosa Isla de Cubagua, conocida por su rica historia perlífera y aguas cristalinas. Este tour todo incluido te ofrece transporte marítimo, almuerzo, bebidas, actividades acuáticas y tiempo libre en playas paradisíacas.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/FULL DAY CUBAGUA LODGE/1.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/FULL DAY CUBAGUA LODGE/2.webp",
+      "/aventuras/FULL DAY CUBAGUA LODGE/3.webp",
+      "/aventuras/FULL DAY CUBAGUA LODGE/4.webp",
+      "/aventuras/FULL DAY CUBAGUA LODGE/5.webp",
+      "/aventuras/FULL DAY CUBAGUA LODGE/6.webp"
     ],
     price: "186.25 USD",
     duration: "Recogida: 7:30 am. Zarpe salida: 9:00 hrs. Zarpe retorno: 15:00 hrs",
@@ -465,9 +502,18 @@ export const tourServices: TourService[] = [
     title: "Day Pass Sunsol Ecoland",
     description: "Disfruta de un día completo en las instalaciones del exclusivo hotel Sunsol Ecoland.",
     fullDescription: "Relájate y disfruta de un día perfecto en las instalaciones del exclusivo hotel Sunsol Ecoland. Incluye acceso a piscinas, áreas de descanso, uso de kayac, paseo en pedal boat, paseo en bicicleta, mini golfito, parque infantil y animación.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_6725.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_6725.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3161 2.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3162.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3163.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3164.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3165.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3166.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3168.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3169.webp",
+      "/aventuras/DAY PASS SUNSOL ECOLAND/IMG_3170.webp"
     ],
     price: "144.00 USD",
     duration: "Entrada: 10:30 am. Salida: 5:30 pm",
@@ -518,9 +564,13 @@ export const tourServices: TourService[] = [
     title: "Submarinismo Los Frailes",
     description: "Aventura submarina en uno de los mejores spots de buceo de Venezuela, el Parque Nacional Los Frailes.",
     fullDescription: "Explora las aguas cristalinas del Parque Nacional Los Frailes, considerado uno de los mejores destinos de buceo en Venezuela. Descubre la rica vida marina, corales coloridos y peces tropicales en este santuario natural protegido. Una experiencia perfecta para amantes del mundo submarino.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/SUBMARINISMO LOS FRAILES/Tour-Buceo-por-Los-Frailes-Excursiones-Isla-de-Margarita-1.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/SUBMARINISMO LOS FRAILES/Tour-Buceo-por-Los-Frailes-Excursiones-Isla-de-Margarita-1.webp",
+      "/aventuras/SUBMARINISMO LOS FRAILES/buceo_en_pareja.webp",
+      "/aventuras/SUBMARINISMO LOS FRAILES/ficha_tour.webp",
+      "/aventuras/SUBMARINISMO LOS FRAILES/images.webp",
+      "/aventuras/SUBMARINISMO LOS FRAILES/PESCA-SKULL.webp"
     ],
     price: "240 USD",
     duration: "Retorno: 3:30 pm aproximadamente",
@@ -561,9 +611,14 @@ export const tourServices: TourService[] = [
     title: "Full Day Tour Margariteño",
     description: "Tour completo por toda la Isla de Margarita visitando sus principales atractivos turísticos y culturales.",
     fullDescription: "Descubre todos los encantos de la Isla de Margarita en un día completo. Este tour integral te llevará por los sitios más emblemáticos, playas paradisíacas, centros históricos, mercados tradicionales y miradores panorámicos. Perfecto para conocer la esencia completa de la Perla del Caribe.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/FULL DAY TOUR MARGARITEÑO/1.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/FULL DAY TOUR MARGARITEÑO/1.webp",
+      "/aventuras/FULL DAY TOUR MARGARITEÑO/2.webp",
+      "/aventuras/FULL DAY TOUR MARGARITEÑO/3.webp",
+      "/aventuras/FULL DAY TOUR MARGARITEÑO/4.webp",
+      "/aventuras/FULL DAY TOUR MARGARITEÑO/5.webp",
+      "/aventuras/FULL DAY TOUR MARGARITEÑO/6.webp"
     ],
     price: "120 USD",
     duration: "Salida: 8:30 / 9:00 am aproximadamente. Llegada: 7:00 pm aproximadamente",
@@ -605,9 +660,18 @@ export const tourServices: TourService[] = [
     title: "Full Day Hotel Margarita Village",
     description: "Disfruta de un día completo en las instalaciones del exclusivo hotel Margarita Village.",
     fullDescription: "Relájate y disfruta de un día perfecto en las instalaciones del exclusivo hotel Margarita Village. Incluye acceso a piscinas con tobogán, áreas de descanso, sala de juegos, parque infantil con cama elástica e inflables, y actividades recreativas para adultos y niños.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3117.jpg",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3117.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3118.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3119.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3120.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3121.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3122.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_3123.jpg",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_4488.HEIC",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_4498.HEIC",
+      "/aventuras/FULL DAY HOTEL MARGARITA VILLAGE/IMG_4502.HEIC"
     ],
     price: "90 USD",
     duration: "Check in: 10:00 AM. Check out: 5:00 PM",
@@ -650,9 +714,12 @@ export const tourServices: TourService[] = [
     title: "Jeep Safari Sin Restinga Naturaleza 4x4",
     description: "Aventura en jeep explorando la naturaleza de Margarita sin visitar La Restinga.",
     fullDescription: "Vive una aventura completa en jeep 4x4 que te llevará por los senderos naturales de Margarita, miradores panorámicos y áreas de observación de flora y fauna silvestre. Un tour perfecto que combina adrenalina, naturaleza y diversión en un vehículo todo terreno.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/JEEP SAFARI SIN RESTINGA NATURALEZA 4X4/jeep.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/JEEP SAFARI SIN RESTINGA NATURALEZA 4X4/jeep.webp",
+      "/aventuras/JEEP SAFARI SIN RESTINGA NATURALEZA 4X4/life-s-reach-tours-jeep.webp",
+      "/aventuras/JEEP SAFARI SIN RESTINGA NATURALEZA 4X4/descarga.webp",
+      "/aventuras/JEEP SAFARI SIN RESTINGA NATURALEZA 4X4/descarga (1).webp"
     ],
     price: "118 USD",
     duration: "Salida: 9:00 am. Regreso: 5:00 pm aproximadamente",
@@ -705,9 +772,11 @@ export const tourServices: TourService[] = [
     title: "Nado con Delfines observador",
     description: "Experiencia única observando y aprendiendo sobre delfines en su hábitat natural.",
     fullDescription: "Vive una experiencia educativa y emocionante observando delfines en su hábitat natural. Esta actividad te permitirá aprender sobre el comportamiento de estos magníficos mamíferos marinos mientras disfrutas de una experiencia única y respetuosa con la naturaleza.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/NADO CON DELFINES OBSERVADOR/unnamed (7).webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/NADO CON DELFINES OBSERVADOR/unnamed (7).webp",
+      "/aventuras/NADO CON DELFINES OBSERVADOR/unnamed (8).webp",
+      "/aventuras/NADO CON DELFINES OBSERVADOR/unnamed (9).webp"
     ],
     price: "25 USD",
     duration: "Variable",
@@ -744,9 +813,15 @@ export const tourServices: TourService[] = [
     title: "Jeep Safari Colonial Playero y Restinga",
     description: "Aventura en jeep combinando historia colonial, playas paradisíacas y la naturaleza de La Restinga.",
     fullDescription: "Vive una aventura completa en jeep 4x4 que combina lo mejor de Margarita: historia colonial en pueblos tradicionales, playas de ensueño y la biodiversidad única del Parque Nacional La Restinga. Un tour perfecto que mezcla cultura, naturaleza y diversión en un vehículo todo terreno.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/jeep-safari-tour-de-playas-isla-margarita-9-1.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/jeep-safari-tour-de-playas-isla-margarita-9-1.webp",
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/14.webp",
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/20190728-095504.webp",
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/IMG_1874.webp",
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/IMG_1880.webp",
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/IMG_1881.webp",
+      "/aventuras/JEEP SAFARI COLONIAL Y RESTINGA/IMG_1883.webp"
     ],
     price: "150 USD",
     duration: "Salida: 9:00 am. Regreso: 5:00 pm aproximadamente",
@@ -797,9 +872,18 @@ export const tourServices: TourService[] = [
     title: "Day Pass Sunsol Isla Caribe",
     description: "Disfruta de un día completo en las instalaciones del exclusivo hotel Sunsol Isla Caribe.",
     fullDescription: "Relájate y disfruta de un día perfecto en las instalaciones del exclusivo hotel Sunsol Isla Caribe. Incluye acceso a piscinas, áreas de descanso, bebidas alcohólicas y no alcohólicas nacionales, almuerzo tipo buffet y disfrute completo de las instalaciones.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3101.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3101.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3102.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3103.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3104.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3105.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3106.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3107.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3108.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3109.webp",
+      "/aventuras/DAY PASS SUN SOL ISLA CARIBE/IMG_3110.webp"
     ],
     price: "124 USD",
     duration: "Entrada: 10:30 AM. Salida: 5:30 PM",
@@ -847,9 +931,11 @@ export const tourServices: TourService[] = [
     title: "Encuentro con Los Delfines",
     description: "Experiencia única e inolvidable interactuando con delfines en un ambiente controlado y seguro.",
     fullDescription: "Vive una de las experiencias más emocionantes y memorables de tu vida interactuando con delfines en un ambiente controlado y seguro. Esta actividad única te permitirá conocer de cerca a estos magníficos mamíferos marinos mientras aprendes sobre su comportamiento y conservación.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/ENCUENTRO CON DELFINES/unnamed (3).webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/ENCUENTRO CON DELFINES/unnamed (3).webp",
+      "/aventuras/ENCUENTRO CON DELFINES/unnamed (5).webp",
+      "/aventuras/ENCUENTRO CON DELFINES/unnamed (8).webp"
     ],
     price: "136 USD",
     duration: "12 minutos por grupo",
@@ -882,9 +968,16 @@ export const tourServices: TourService[] = [
     title: "Full day Isla de Cubagua ILC",
     description: "Experiencia completa en la histórica Isla de Cubagua con todas las comodidades incluidas para un día perfecto.",
     fullDescription: "Disfruta de un día completo en la hermosa Isla de Cubagua, conocida por su rica historia perlífera y aguas cristalinas. Este tour todo incluido te ofrece transporte marítimo, snacks, bebidas, actividades acuáticas como snorkel y tiempo libre en playas paradisíacas.",
-    image: "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg",
+    image: "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/1.webp",
     gallery: [
-      "https://res.cloudinary.com/dhzl31kb8/image/upload/v1743265216/IMG_0303_daewt4_d1xkdz.jpg"
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/1.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/2.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/3.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/4.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/5.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/6.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/7.webp",
+      "/aventuras/FULL DAY ISLA DE CUBAGUA ILC/8.webp"
     ],
     price: "126.25 USD",
     duration: "Recogida: 7:30 am aproximadamente. Retorno: 3:00 p.m",
