@@ -480,12 +480,50 @@ export default function AnfitrionPage() {
                   </div>
                 </motion.div>
 
+                {/* Recorrido con paradas */}
+                {selectedService.stops && selectedService.stops.length > 0 && (
+                  <motion.div 
+                    className="mb-8"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.35 }}
+                  >
+                    <h3 className="text-lg font-bold text-expitour-dark mb-4 flex items-center gap-2">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 text-expitour-teal" />
+                      Recorrido
+                    </h3>
+                    <div className="bg-gradient-to-r from-expitour-blue/5 to-expitour-teal/5 rounded-xl p-6 border border-expitour-blue/10">
+                      <p className="text-sm text-gray-600 mb-4 font-medium">
+                        Paradas que realizaremos durante el tour:
+                      </p>
+                      <div className="space-y-3">
+                        {selectedService.stops.map((stop, index) => (
+                          <motion.div 
+                            key={index} 
+                            className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.4 + index * 0.03 }}
+                          >
+                            <div className="bg-expitour-teal text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                              {index + 1}
+                            </div>
+                            <p className="text-gray-700 leading-relaxed text-sm">
+                              {stop}
+                            </p>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+
                 {/* Botón de reserva */}
                 <motion.div 
                   className="text-center"
                   initial={{ opacity: 0, y: 10 }} // Reducido de 20 a 10
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }} // Reducido de 0.8
+                  transition={{ delay: 0.45 }} // Ajustado para aparecer después del recorrido
                 >
                   <motion.a
                     href={getWhatsAppLink(selectedService.whatsappMessage)}

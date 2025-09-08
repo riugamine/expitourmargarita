@@ -36,6 +36,7 @@ export interface TourService {
   itinerary: ItineraryItem[];
   whatsappMessage: string;
   category: 'senderismo' | 'acuatico' | 'cultural' | 'aventura' | 'relajacion' | 'panoramico';
+  stops?: string[];
 }
 
 export interface ItineraryItem {

@@ -139,7 +139,16 @@ export const tourServices: TourService[] = [
       }
     ],
     whatsappMessage: "¡Hola! El tour del atardecer margariteño me parece perfecto. ¿A qué hora salen?",
-    category: "panoramico"
+    category: "panoramico",
+    stops: [
+      "Visitar la Virgen del Valle",
+      "Parada de hidratación en Playa El Ángel",
+      "Ser parte de la Historia en el Castillo San Carlos de Borromeo",
+      "Disfrutar de una Polar bien fría en Brasas",
+      "Subir al faro Punta Ballena",
+      "Conocer la Salina de Pampatar",
+      "Visitar un Bar clandestino (@casapampatar)"
+    ]
   },
   {
     id: "vuelo-parapente-margarita",
@@ -323,7 +332,13 @@ export const tourServices: TourService[] = [
       }
     ],
     whatsappMessage: "¡Hola! Me interesa la Aventura en Pampatar. ¿Qué incluye el tour?",
-    category: "aventura"
+    category: "aventura",
+    stops: [
+      "Aventura en bicicletas eléctricas por Pampatar",
+      "Visitar el casco histórico",
+      "Dirigirse a las salinas de Pampatar",
+      "Finalizar en @salmapata"
+    ]
   },
   {
     id: "costa-caribe-pool-day",
@@ -653,7 +668,18 @@ export const tourServices: TourService[] = [
       }
     ],
     whatsappMessage: "¡Hola! Quiero hacer el Full Day por toda Margarita. ¿Qué incluye exactamente?",
-    category: "panoramico"
+    category: "panoramico",
+    stops: [
+      "Visitar la Virgen del Valle",
+      "Comer Empanadas en el Mercado de Conejeros",
+      "Ser parte de la Historia en el Castillo de PAMPATAR",
+      "Subir al Faro Punta Ballenas",
+      "Conocer la Salina de Pampatar",
+      "Almorzar en la playa de la Bahía de Pampatar",
+      "Tiempo de Playa",
+      "Conocer La Tienda de Souvenirs de la Casa Pampatar y una sorpresa más!",
+      "Ver la puesta del sol en Juan Griego y disfrutar de un compartir crepuscular!"
+    ]
   },
   {
     id: "full-day-hotel-margarita-village",
@@ -765,7 +791,15 @@ export const tourServices: TourService[] = [
       }
     ],
     whatsappMessage: "¡Hola! El Jeep Safari me parece increíble. ¿Incluye todas las actividades mencionadas?",
-    category: "aventura"
+    category: "aventura",
+    stops: [
+      "Parque Nacional Cerro Copey. La Sierra",
+      "Sabores de Altura. Senderismo suave. Degustación de frutas de estación. Mirador",
+      "Boca Chica. Laguna y acantilado. Zona xerófila. Off Road",
+      "Off Road para alcanzar La Carmela playa virgen. Tiempo para caminar, bañarse y disfrutar de una playa virgen",
+      "La Pared. Almuerzo y tiempo de playa con todos los servicios",
+      "Parada técnica en tienda de conveniencia en La Restinga para uso de sanitarios y refrigerios"
+    ]
   },
   {
     id: "nado-con-delfines-observador",
@@ -865,7 +899,17 @@ export const tourServices: TourService[] = [
       }
     ],
     whatsappMessage: "¡Hola! El Jeep Safari Colonial me parece increíble. ¿Incluye todas las actividades mencionadas?",
-    category: "aventura"
+    category: "aventura",
+    stops: [
+      "La Asunción, capital del estado. Briefing de bienvenida",
+      "Castillo Santa Rosa",
+      "El Valle del Espíritu Santo. Visita a la Basílica y alrededores",
+      "Laguna de la Restinga. Paseo en bote (30 MIN). Se incluye: Una empanada y jugo de papelón P/P",
+      "La Pared. Almuerzo y tiempo de playa con todos los servicios",
+      "Off Road para alcanzar La Carmela playa virgen",
+      "Tiempo para caminar, bañarse y disfrutar de una playa virgen",
+      "Parada técnica en tienda de conveniencia en La Restinga"
+    ]
   },
   {
     id: "day-pass-sunsol-isla-caribe",
