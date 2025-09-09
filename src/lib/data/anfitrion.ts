@@ -89,12 +89,12 @@ export const tourServices: TourService[] = [
     title: "Tour Margariteño Atardecer",
     description: "Recorrido por los lugares más emblemáticos de Margarita durante las horas doradas del atardecer.",
     fullDescription: "Vive la magia de Margarita durante el atardecer con este tour especial que te llevará por los sitios más fotogénicos y románticos de la isla. Disfruta de vistas espectaculares, colores únicos del cielo caribeño y los mejores spots para capturar recuerdos inolvidables mientras el sol se pone en el horizonte.",
-    image: "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2593 2.webp",
+    image: "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2593 2.webp",
     gallery: [
-      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2552.webp",
-      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2574 2.webp",
-      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_2593 2.webp",
-      "/aventuras/TOUR MARGARITEÑO ATARDECER/IMG_3639.webp"
+      "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2552.webp",
+      "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2574-2.webp",
+      "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2593-2.webp",
+      "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_3639.webp"
     ],
     price: "80 USD",
     duration: "Salida: 1:00 / 1:30 pm aproximadamente. Llegada: 7:00 pm aproximadamente",
@@ -626,14 +626,14 @@ export const tourServices: TourService[] = [
     title: "Full Day Tour Margariteño",
     description: "Tour completo por toda la Isla de Margarita visitando sus principales atractivos turísticos y culturales.",
     fullDescription: "Descubre todos los encantos de la Isla de Margarita en un día completo. Este tour integral te llevará por los sitios más emblemáticos, playas paradisíacas, centros históricos, mercados tradicionales y miradores panorámicos. Perfecto para conocer la esencia completa de la Perla del Caribe.",
-    image: "/aventuras/FULL DAY TOUR MARGARITEÑO/1.webp",
+    image: "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/1.webp",
     gallery: [
-      "/aventuras/FULL DAY TOUR MARGARITEÑO/1.webp",
-      "/aventuras/FULL DAY TOUR MARGARITEÑO/2.webp",
-      "/aventuras/FULL DAY TOUR MARGARITEÑO/3.webp",
-      "/aventuras/FULL DAY TOUR MARGARITEÑO/4.webp",
-      "/aventuras/FULL DAY TOUR MARGARITEÑO/5.webp",
-      "/aventuras/FULL DAY TOUR MARGARITEÑO/6.webp"
+      "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/1.webp",
+      "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/2.webp",
+      "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/3.webp",
+      "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/4.webp",
+      "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/5.webp",
+      "/aventuras/FULL-DAY-TOUR-MARGARITEÑO/6.webp"
     ],
     price: "120 USD",
     duration: "Salida: 8:30 / 9:00 am aproximadamente. Llegada: 7:00 pm aproximadamente",
