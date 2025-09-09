@@ -89,7 +89,7 @@ export const tourServices: TourService[] = [
     title: "Tour Margariteño Atardecer",
     description: "Recorrido por los lugares más emblemáticos de Margarita durante las horas doradas del atardecer.",
     fullDescription: "Vive la magia de Margarita durante el atardecer con este tour especial que te llevará por los sitios más fotogénicos y románticos de la isla. Disfruta de vistas espectaculares, colores únicos del cielo caribeño y los mejores spots para capturar recuerdos inolvidables mientras el sol se pone en el horizonte.",
-    image: "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2593 2.webp",
+    image: "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2593-2.webp",
     gallery: [
       "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2552.webp",
       "/aventuras/TOUR-MARGARITENO-ATARDECER/IMG_2574-2.webp",
