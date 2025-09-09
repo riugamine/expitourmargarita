@@ -26,8 +26,8 @@ export default function CallToAction() {
               ¡Tu próxima aventura te espera!
             </span>
             <h2 className="font-poppins text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-              ¿listo para vivir la{' '}
-              <span className="text-expitour-yellow">experiencia Margarita</span>?
+              ¿Listo para vivir la{' '}
+              <span className="text-expitour-yellow">experiencia en Margarita</span>?
             </h2>
             <p className="font-lora text-xl md:text-2xl text-gray-100 mb-10 leading-relaxed">
               Contacta con nuestro equipo de expertos y comienza a planificar tus próximas vacaciones en el paraíso caribeño
