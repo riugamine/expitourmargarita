@@ -97,7 +97,7 @@ deploy() {
     echo
     echo "🌐 Tu aplicación está disponible en:"
     echo "   • http://localhost:3000 (directo - Next.js)"
-    echo "   • https://exitourmargarita.com (externo - Nginx del sistema)"
+    echo "   • https://expitourmargarita.com (externo - Nginx del sistema)"
     echo
     echo "📋 Próximos pasos:"
     echo "   1. Configura SSL con: ./docker-deploy.sh ssl"
@@ -190,26 +190,28 @@ setup_ssl() {
     # Obtener certificado
     log "Obteniendo certificado SSL..."
     read -p "Ingresa tu email para el certificado: " email
-    sudo certbot certonly --standalone -d exitourmargarita.com -d www.exitourmargarita.com --non-interactive --agree-tos --email "$email"
+    sudo certbot certonly --standalone -d expitourmargarita.com -d www.expitourmargarita.com --non-interactive --agree-tos --email "$email"
     
     # Configurar Nginx del sistema
     log "Configurando Nginx del sistema..."
-    sudo tee /etc/nginx/sites-available/exitourmargarita.com > /dev/null << 'EOF'
+    sudo tee /etc/nginx/sites-available/expitourmargarita.com > /dev/null << 'EOF'
 # Redirigir HTTP a HTTPS
 server {
     listen 80;
-    server_name exitourmargarita.com www.exitourmargarita.com;
+    server_name expitourmargarita.com www.expitourmargarita.com;
     return 301 https://$server_name$request_uri;
 }
 
 # Servidor HTTPS principal
 server {
     listen 443 ssl http2;
-    server_name exitourmargarita.com www.exitourmargarita.com;
+    server_name expitourmargarita.com www.expitourmargarita.com;
     
     # Configuración SSL
-    ssl_certificate /etc/letsencrypt/live/exitourmargarita.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/exitourmargarita.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/expitourmargarita.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/expitourmargarita.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
     
     # Headers de seguridad
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
@@ -251,7 +253,7 @@ server {
 EOF
     
     # Habilitar sitio
-    sudo ln -sf /etc/nginx/sites-available/exitourmargarita.com /etc/nginx/sites-enabled/
+    sudo ln -sf /etc/nginx/sites-available/expitourmargarita.com /etc/nginx/sites-enabled/
     
     # Verificar configuración
     sudo nginx -t
@@ -267,9 +269,9 @@ EOF
     success "SSL configurado correctamente!"
     echo
     echo "🔐 Tu aplicación ahora está disponible en:"
-    echo "   • https://exitourmargarita.com"
-    echo "   • https://www.exitourmargarita.com"
-    echo "   • http://exitourmargarita.com (redirige a HTTPS)"
+    echo "   • https://expitourmargarita.com"
+    echo "   • https://www.expitourmargarita.com"
+    echo "   • http://expitourmargarita.com (redirige a HTTPS)"
     echo
     echo "📋 Arquitectura:"
     echo "   • Nginx del sistema (Puerto 80/443) → Next.js (Puerto 3000)"
