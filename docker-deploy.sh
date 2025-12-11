@@ -210,8 +210,6 @@ server {
     # Configuración SSL
     ssl_certificate /etc/letsencrypt/live/exitourmargarita.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/exitourmargarita.com/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
     
     # Headers de seguridad
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
