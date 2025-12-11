@@ -1,0 +1,39 @@
+# docker-compose.yml para expitourmargarita.com
+# Configuración usando Nginx del sistema
+
+services:
+  # ===========================================
+  # APLICACIÓN NEXT.JS
+  # ===========================================
+  expitourmargarita-app:
+    build:
+      context: .                    # Construir desde el directorio actual
+      dockerfile: Dockerfile        # Usar nuestro Dockerfile
+    image: expitourmargarita-app:latest  # Nombre de la imagen
+    container_name: expitourmargarita-app # Nombre del contenedor
+    restart: unless-stopped         # Reiniciar automáticamente si falla
+    ports:
+      - "3000:3000"                # Puerto 3000 - solo Next.js
+    environment:
+      - NODE_ENV=production        # Modo producción
+      - NEXT_TELEMETRY_DISABLED=1  # Deshabilitar telemetría
+    env_file:
+      - .env.local                 # Cargar variables de entorno
+    networks:
+      - expitourmargarita-network  # Red personalizada
+    healthcheck:
+      # Verificar que la app esté funcionando
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s                # Verificar cada 30 segundos
+      timeout: 10s                 # Timeout de 10 segundos
+      retries: 3                   # 3 intentos antes de marcar como no saludable
+      start_period: 40s            # Esperar 40 segundos antes de empezar a verificar
+
+# ===========================================
+# REDES (COMUNICACIÓN ENTRE CONTENEDORES)
+# ===========================================
+networks:
+  expitourmargarita-network:
+    driver: bridge                 # Red tipo bridge (estándar)
+    name: expitourmargarita-network
+
