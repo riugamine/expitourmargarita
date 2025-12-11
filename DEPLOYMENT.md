@@ -13,6 +13,26 @@ Documentación completa para desplegar la aplicación Next.js con Docker en un s
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker $USER && newgrp docker
 
+# Instalar Docker Compose
+# Opción 1: Docker Compose V2 (recomendado - viene con Docker Desktop)
+# Si Docker se instaló con el script anterior, Compose V2 ya está incluido
+docker compose version  # Verificar si está instalado
+
+# Si no está instalado, instalar Docker Compose V2
+sudo apt update
+sudo apt install -y docker-compose-plugin
+
+# Opción 2: Docker Compose V1 (si prefieres la versión standalone)
+# Descargar la última versión
+DOCKER_COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
+sudo curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Verificar instalación
+docker-compose --version  # Para V1
+# o
+docker compose version    # Para V2
+
 # Instalar Nginx y Certbot
 sudo apt update && sudo apt install -y nginx certbot git
 
@@ -97,6 +117,108 @@ curl https://exitourmargarita.com
 - ✅ Mínimo 20GB de espacio en disco
 - ✅ Acceso SSH como root o usuario con sudo
 - ✅ Dominio apuntando a la IP del servidor
+
+### Software Necesario
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- ✅ **Docker** (versión 20.10 o superior)
+- ✅ **Docker Compose** (versión 1.29 o superior, o Compose V2)
+- ✅ **Nginx** (para reverse proxy)
+- ✅ **Certbot** (para certificados SSL)
+- ✅ **Git** (para clonar el repositorio)
+
+---
+
+## 🔧 Instalación Detallada de Docker Compose
+
+### Verificar si Docker Compose ya está instalado
+
+```bash
+# Verificar Docker Compose V2 (recomendado)
+docker compose version
+
+# Verificar Docker Compose V1
+docker-compose --version
+```
+
+Si ambos comandos fallan, necesitas instalar Docker Compose.
+
+### Instalar Docker Compose V2 (Recomendado)
+
+Docker Compose V2 es un plugin de Docker y es la versión recomendada:
+
+```bash
+# Actualizar repositorios
+sudo apt update
+
+# Instalar Docker Compose plugin
+sudo apt install -y docker-compose-plugin
+
+# Verificar instalación
+docker compose version
+```
+
+**Nota:** Con Docker Compose V2, el comando es `docker compose` (con espacio) en lugar de `docker-compose` (con guión).
+
+### Instalar Docker Compose V1 (Alternativa)
+
+Si prefieres la versión standalone de Docker Compose V1:
+
+```bash
+# Descargar la última versión de Docker Compose
+DOCKER_COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
+sudo curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# Dar permisos de ejecución
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Crear enlace simbólico (opcional)
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+# Verificar instalación
+docker-compose --version
+```
+
+**Versión específica:** Si necesitas instalar una versión específica de Docker Compose V1, reemplaza `${DOCKER_COMPOSE_VERSION}` con la versión deseada, por ejemplo: `v2.24.0`
+
+### Solución de Problemas
+
+#### Problema: "docker-compose: command not found"
+
+```bash
+# Verificar que el archivo existe
+ls -la /usr/local/bin/docker-compose
+
+# Si no existe, reinstalar
+# Ver comandos de instalación arriba
+
+# Verificar permisos
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+#### Problema: "docker compose: command not found" (V2)
+
+```bash
+# Instalar el plugin de Docker Compose
+sudo apt update
+sudo apt install -y docker-compose-plugin
+
+# Verificar que Docker está corriendo
+sudo systemctl status docker
+
+# Asegurarse de que el usuario está en el grupo docker
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+#### Verificar Compatibilidad
+
+Este proyecto funciona con ambas versiones:
+- **Docker Compose V1:** Usa `docker-compose` (con guión)
+- **Docker Compose V2:** Usa `docker compose` (con espacio)
+
+El script `docker-deploy.sh` usa `docker-compose` por compatibilidad, pero puedes actualizarlo para usar `docker compose` si tienes V2 instalado.
 
 ---
 

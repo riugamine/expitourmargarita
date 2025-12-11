@@ -30,13 +30,26 @@ error() {
     exit 1
 }
 
+# Función helper para detectar y usar docker-compose
+# Compatible con Docker Compose V1 (docker-compose) y V2 (docker compose)
+docker_compose_cmd() {
+    if command -v docker-compose &> /dev/null; then
+        docker-compose "$@"
+    elif docker compose version &> /dev/null 2>&1; then
+        docker compose "$@"
+    else
+        error "Docker Compose no está instalado. Instálalo primero."
+    fi
+}
+
 # Verificar que Docker esté instalado
 check_docker() {
     if ! command -v docker &> /dev/null; then
         error "Docker no está instalado. Instálalo primero."
     fi
     
-    if ! command -v docker-compose &> /dev/null; then
+    # Verificar Docker Compose V1 (docker-compose) o V2 (docker compose)
+    if ! command -v docker-compose &> /dev/null && ! docker compose version &> /dev/null 2>&1; then
         error "Docker Compose no está instalado. Instálalo primero."
     fi
     
@@ -62,10 +75,10 @@ deploy() {
     check_env
     
     log "Construyendo imagen Docker..."
-    docker-compose build
+    docker_compose_cmd build
     
     log "Ejecutando contenedores..."
-    docker-compose up -d
+    docker_compose_cmd up -d
     
     log "Esperando que los servicios estén listos..."
     sleep 10
@@ -78,7 +91,7 @@ deploy() {
     fi
     
     log "Verificando estado de contenedores..."
-    docker-compose ps
+    docker_compose_cmd ps
     
     success "Deployment completado!"
     echo
@@ -99,13 +112,13 @@ update() {
     check_docker
     
     log "Parando contenedores..."
-    docker-compose down
+    docker_compose_cmd down
     
     log "Reconstruyendo imagen..."
-    docker-compose build --no-cache
+    docker_compose_cmd build --no-cache
     
     log "Ejecutando contenedores actualizados..."
-    docker-compose up -d
+    docker_compose_cmd up -d
     
     log "Esperando que los servicios estén listos..."
     sleep 10
@@ -126,13 +139,13 @@ update() {
 # Función para ver logs
 logs() {
     log "Mostrando logs de la aplicación..."
-    docker-compose logs -f
+    docker_compose_cmd logs -f
 }
 
 # Función para ver estado
 status() {
     log "Estado de los contenedores:"
-    docker-compose ps
+    docker_compose_cmd ps
     
     echo
     log "Uso de recursos:"
@@ -149,7 +162,12 @@ status() {
     echo
     log "Información del sistema:"
     echo "   • Docker version: $(docker --version)"
-    echo "   • Docker Compose version: $(docker-compose --version)"
+    # Mostrar versión de Docker Compose (V1 o V2)
+    if command -v docker-compose &> /dev/null; then
+        echo "   • Docker Compose version: $(docker-compose --version)"
+    elif docker compose version &> /dev/null 2>&1; then
+        echo "   • Docker Compose version: $(docker compose version)"
+    fi
     echo "   • Uptime: $(uptime -p)"
     echo "   • Disk usage: $(df -h / | tail -1 | awk '{print $5}')"
 }
